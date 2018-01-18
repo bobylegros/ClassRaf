@@ -1,13 +1,11 @@
-def hello
-  puts "Hello World!" # = return "Hello!"
-end
-
+require "pry"
+require_relative 'hello'
 
 def hi (first_name)
    puts "Hi #{first_name}!"
 end
 
-
-hello
 hi("Bob")
 hi("Alice")
+# binding.pry
+hello
