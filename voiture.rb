@@ -1,4 +1,10 @@
-class Voiture        #les class doivent toutes avoir une Majuscule
+class Voiture
+  attr_reader :couleur       #les class doivent toutes avoir une Majuscule
+  def initialize(couleur)
+    @couleur = couleur        #@ fait référence à la
+    puts "Je démarre ma caisse"
+  end
+
   def klaxonner
     puts "Bip Bip!"
   end
@@ -11,6 +17,10 @@ class Voiture        #les class doivent toutes avoir une Majuscule
     else
       puts "Si possible faites demi-tour!"
     end
+  end
+
+  def afficher_ma_couleur()
+    puts "J'ai une voiture #{@couleur}"
   end
 end
 
