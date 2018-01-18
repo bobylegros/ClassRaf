@@ -1,9 +1,6 @@
-require "pry"
-require_relative 'hello'
-
-def hi (first_name)
-   puts "Hi #{first_name}!"
-end
+# require "pry"
+require_relative './hello'
+require_relative './hi'
 
 hi("Bob")
 hi("Alice")
