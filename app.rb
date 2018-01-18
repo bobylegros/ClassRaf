@@ -1,6 +1,13 @@
 def hello
-  "Hello World!" # = return "Hello!"
+  puts "Hello World!" # = return "Hello!"
 end
 
 
-puts hello
+def hi (first_name)
+   puts "Hi #{first_name}!"
+end
+
+
+hello
+hi("Bob")
+hi("Alice")
