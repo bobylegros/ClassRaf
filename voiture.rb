@@ -22,7 +22,13 @@ class Voiture
   def afficher_ma_couleur()
     puts "J'ai une voiture #{@couleur}"
   end
+
+  def pimp_ma_caisse(couleur_new)   #je modifie la valeur de la variable @couleur, et qui change la couleur de la voiture
+    @couleur = couleur_new
+  end
+
 end
+
 
 
 def hi (first_name)
